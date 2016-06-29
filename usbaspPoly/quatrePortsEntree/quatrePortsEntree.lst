@@ -1,0 +1,147 @@
+GAS LISTING /tmp/cc7kHmWI.s 			page 1
+
+
+   1               		.file	"quatrePortsEntree.cpp"
+   2               	__SREG__ = 0x3f
+   3               	__SP_H__ = 0x3e
+   4               	__SP_L__ = 0x3d
+   5               	__CCP__  = 0x34
+   6               	__tmp_reg__ = 0
+   7               	__zero_reg__ = 1
+   8               		.global __do_copy_data
+   9               		.global __do_clear_bss
+  10               		.stabs	"/home/p700033/tmp1/usbaspPoly/quatrePortsEntree/",100,0,4,.Ltext0
+  11               		.stabs	"quatrePortsEntree.cpp",100,0,4,.Ltext0
+  12               		.text
+  13               	.Ltext0:
+  14               		.stabs	"gcc2_compiled.",60,0,0,0
+  15               		.stabs	"__builtin_va_list:t(0,1)=*(0,2)=(0,2)",128,0,1,0
+  16               		.stabs	"complex long double:t(0,3)=R3;8;0;",128,0,1,0
+  17               		.stabs	"complex double:t(0,4)=R3;8;0;",128,0,1,0
+  18               		.stabs	"complex float:t(0,5)=R3;8;0;",128,0,1,0
+  19               		.stabs	"complex int:t(0,6)=s4real:(0,7)=r(0,7);-32768;32767;,0,16;imag:(0,7),16,16;;",128,0,1,0
+  20               		.stabs	"long long unsigned int:t(0,8)=@s64;r(0,8);0;01777777777777777777777;",128,0,1,0
+  21               		.stabs	"long unsigned int:t(0,9)=@s32;r(0,9);0;037777777777;",128,0,1,0
+  22               		.stabs	"unsigned int:t(0,10)=r(0,10);0;0177777;",128,0,1,0
+  23               		.stabs	"unsigned char:t(0,11)=@s8;r(0,11);0;255;",128,0,1,0
+  24               		.stabs	"long long int:t(0,12)=@s64;r(0,12);01000000000000000000000;0777777777777777777777;",128,0,
+  25               		.stabs	"long int:t(0,13)=@s32;r(0,13);020000000000;017777777777;",128,0,1,0
+  26               		.stabs	"int:t(0,7)",128,0,1,0
+  27               		.stabs	"signed char:t(0,14)=@s8;r(0,14);-128;127;",128,0,1,0
+  28               		.stabs	"char:t(0,15)=@s8;r(0,15);0;255;",128,0,1,0
+  29               		.stabs	"signed:t(0,7)",128,0,1,0
+  30               		.stabs	"unsigned long:t(0,9)",128,0,1,0
+  31               		.stabs	"long long unsigned:t(0,8)",128,0,1,0
+  32               		.stabs	"short int:t(0,16)=r(0,16);-32768;32767;",128,0,1,0
+  33               		.stabs	"short unsigned int:t(0,17)=r(0,17);0;0177777;",128,0,1,0
+  34               		.stabs	"unsigned short:t(0,17)",128,0,1,0
+  35               		.stabs	"float:t(0,18)=r(0,7);4;0;",128,0,1,0
+  36               		.stabs	"double:t(0,19)=r(0,7);4;0;",128,0,1,0
+  37               		.stabs	"long double:t(0,20)=r(0,7);4;0;",128,0,1,0
+  38               		.stabs	"void:t(0,2)",128,0,1,0
+  39               		.stabs	"wchar_t:t(0,21)=r(0,21);-32768;32767;",128,0,1,0
+  40               		.stabs	"bool:t(0,22)=@s8;-16;",128,0,1,0
+  41               		.stabs	"__vtbl_ptr_type:t(0,23)=*(0,24)=f(0,7)",128,0,1,0
+  42               		.stabs	"int8_t:t(0,25)=(0,14)",128,0,121,0
+  43               		.stabs	"uint8_t:t(0,26)=(0,11)",128,0,122,0
+  44               		.stabs	"int16_t:t(0,27)=(0,7)",128,0,123,0
+  45               		.stabs	"uint16_t:t(0,28)=(0,10)",128,0,124,0
+  46               		.stabs	"int32_t:t(0,29)=(0,13)",128,0,125,0
+  47               		.stabs	"uint32_t:t(0,30)=(0,9)",128,0,126,0
+  48               		.stabs	"int64_t:t(0,31)=(0,12)",128,0,128,0
+  49               		.stabs	"uint64_t:t(0,32)=(0,8)",128,0,129,0
+  50               		.stabs	"intptr_t:t(0,33)=(0,27)",128,0,142,0
+  51               		.stabs	"uintptr_t:t(0,34)=(0,28)",128,0,147,0
+  52               		.stabs	"int_least8_t:t(0,35)=(0,25)",128,0,159,0
+  53               		.stabs	"uint_least8_t:t(0,36)=(0,26)",128,0,164,0
+  54               		.stabs	"int_least16_t:t(0,37)=(0,27)",128,0,169,0
+  55               		.stabs	"uint_least16_t:t(0,38)=(0,28)",128,0,174,0
+  56               		.stabs	"int_least32_t:t(0,39)=(0,29)",128,0,179,0
+  57               		.stabs	"uint_least32_t:t(0,40)=(0,30)",128,0,184,0
+GAS LISTING /tmp/cc7kHmWI.s 			page 2
+
+
+  58               		.stabs	"int_least64_t:t(0,41)=(0,31)",128,0,192,0
+  59               		.stabs	"uint_least64_t:t(0,42)=(0,32)",128,0,199,0
+  60               		.stabs	"int_fast8_t:t(0,43)=(0,25)",128,0,213,0
+  61               		.stabs	"uint_fast8_t:t(0,44)=(0,26)",128,0,218,0
+  62               		.stabs	"int_fast16_t:t(0,45)=(0,27)",128,0,223,0
+  63               		.stabs	"uint_fast16_t:t(0,46)=(0,28)",128,0,228,0
+  64               		.stabs	"int_fast32_t:t(0,47)=(0,29)",128,0,233,0
+  65               		.stabs	"uint_fast32_t:t(0,48)=(0,30)",128,0,238,0
+  66               		.stabs	"int_fast64_t:t(0,49)=(0,31)",128,0,246,0
+  67               		.stabs	"uint_fast64_t:t(0,50)=(0,32)",128,0,253,0
+  68               		.stabs	"intmax_t:t(0,51)=(0,31)",128,0,273,0
+  69               		.stabs	"uintmax_t:t(0,52)=(0,32)",128,0,278,0
+  70               		.stabs	"int_farptr_t:t(0,53)=(0,29)",128,0,77,0
+  71               		.stabs	"uint_farptr_t:t(0,54)=(0,30)",128,0,81,0
+  72               		.stabs	"._0:Tt(0,55)=s2low:(0,11),0,8;high:(0,11),8,8;;",128,0,244,0
+  73               		.stabs	"__fuse_t:t(0,55)",128,0,247,0
+  74               		.stabs	"main:F(0,7)",36,0,14,main
+  75               	.global	main
+  76               		.type	main, @function
+  77               	main:
+  78               		.stabd	46,0,0
+   0:quatrePortsEntree.cpp **** /*
+   1:quatrePortsEntree.cpp ****  * Nom: quatrePortsEntree
+   2:quatrePortsEntree.cpp ****  * Description: programme a placer sur le ATMega16/324/644
+   3:quatrePortsEntree.cpp ****  * pour eviter de nuire au ATMega8 lorsque celui-ci devient
+   4:quatrePortsEntree.cpp ****  * un programmeur.  Il suffit de placer les ports [a-d] en entree
+   5:quatrePortsEntree.cpp ****  * Version: 1
+   6:quatrePortsEntree.cpp ****  */
+   7:quatrePortsEntree.cpp **** 
+   8:quatrePortsEntree.cpp **** #define F_CPU 8000000L
+   9:quatrePortsEntree.cpp **** 
+  10:quatrePortsEntree.cpp **** #include <avr/io.h> 
+  11:quatrePortsEntree.cpp **** #include <util/delay.h>
+  12:quatrePortsEntree.cpp **** 
+  13:quatrePortsEntree.cpp **** int main()
+  79               		.stabn	68,0,14,.LM0-.LFBB1
+  80               	.LM0:
+  81               	.LFBB1:
+  82               	/* prologue: function */
+  83               	/* frame size = 0 */
+  14:quatrePortsEntree.cpp **** {
+  15:quatrePortsEntree.cpp ****   DDRA = 0x00; // PORT A est en mode entree
+  84               		.stabn	68,0,16,.LM1-.LFBB1
+  85               	.LM1:
+  86 0000 1ABA      		out 58-32,__zero_reg__
+  16:quatrePortsEntree.cpp ****   DDRB = 0x00; // PORT B est en mode entree
+  87               		.stabn	68,0,17,.LM2-.LFBB1
+  88               	.LM2:
+  89 0002 17BA      		out 55-32,__zero_reg__
+  17:quatrePortsEntree.cpp ****   DDRC = 0x00; // PORT C est en mode entree
+  90               		.stabn	68,0,18,.LM3-.LFBB1
+  91               	.LM3:
+  92 0004 14BA      		out 52-32,__zero_reg__
+  18:quatrePortsEntree.cpp ****   DDRD = 0x00; // PORT D est en mode entree
+  93               		.stabn	68,0,19,.LM4-.LFBB1
+  94               	.LM4:
+  95 0006 11BA      		out 49-32,__zero_reg__
+GAS LISTING /tmp/cc7kHmWI.s 			page 3
+
+
+  96               	.L2:
+  97 0008 00C0      		rjmp .L2
+  98               		.size	main, .-main
+  99               	.Lscope1:
+ 100               		.stabs	"",36,0,0,.Lscope1-.LFBB1
+ 101               		.stabd	78,0,0
+ 102               		.stabs	"",100,0,0,.Letext0
+ 103               	.Letext0:
+GAS LISTING /tmp/cc7kHmWI.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 quatrePortsEntree.cpp
+     /tmp/cc7kHmWI.s:2      *ABS*:0000003f __SREG__
+     /tmp/cc7kHmWI.s:3      *ABS*:0000003e __SP_H__
+     /tmp/cc7kHmWI.s:4      *ABS*:0000003d __SP_L__
+     /tmp/cc7kHmWI.s:5      *ABS*:00000034 __CCP__
+     /tmp/cc7kHmWI.s:6      *ABS*:00000000 __tmp_reg__
+     /tmp/cc7kHmWI.s:7      *ABS*:00000001 __zero_reg__
+     /tmp/cc7kHmWI.s:77     .text:00000000 main
+
+UNDEFINED SYMBOLS
+__do_copy_data
+__do_clear_bss

@@ -1,0 +1,18 @@
+EAGLE Version 4.15 Copyright (c) 1988-2005 CadSoft
+
+Electrical Rule Check for D:/work/hardware/AVR-PontH/ponth.sch at 29/09/2005 01:49:46a
+
+WARNING: Sheet 1/1: POWER Pin PONT-H GND1 connected to GND
+WARNING: Sheet 1/1: POWER Pin PONT-H GND2 connected to GND
+WARNING: Sheet 1/1: POWER Pin PONT-H VCC2 connected to V+
+WARNING: Sheet 1/1: POWER Pin PONT-H VCC1 connected to VCC
+WARNING: Sheet 1/1: POWER Pin PONT-H GND3 connected to GND
+WARNING: Sheet 1/1: POWER Pin PONT-H GND4 connected to GND
+WARNING: Sheet 1/1, Net EN-GAU: missing Junction at (5.3 3.4)
+WARNING: Sheet 1/1: Nets N$23 and VCC too close at (1.4 5.2)
+WARNING: Sheet 1/1, Net N$23: wire overlaps pin at (1.4 5.2)
+
+Board and schematic are consistent
+
+    0 errors
+    9 warnings

@@ -1,0 +1,275 @@
+Terminals unused in grammar
+
+   MAUVAISJETON
+
+
+Grammar
+
+    0 $accept: instructions $end
+
+    1 instructions: %empty
+    2             | instructions instruction POINTVIRGULE
+    3             | instructions error POINTVIRGULE
+
+    4 instruction: mnemonique1
+    5            | mnemonique2 valeur
+
+    6 mnemonique1: DBT
+    7            | FIN
+    8            | SAR
+    9            | MAR
+   10            | TRD
+   11            | TRG
+   12            | DBC
+   13            | FBC
+
+   14 mnemonique2: ATT
+   15            | DAL
+   16            | DET
+   17            | SGO
+   18            | MAV
+   19            | MRE
+   20            | DBC
+
+   21 valeur: DONNEE
+
+
+Terminals, with rules where they appear
+
+$end (0) 0
+error (256) 3
+DBT (258) 6
+FIN (259) 7
+ATT (260) 14
+DAL (261) 15
+DET (262) 16
+SGO (263) 17
+SAR (264) 8
+MAR (265) 9
+MAV (266) 18
+MRE (267) 19
+TRD (268) 10
+TRG (269) 11
+DBC (270) 12 20
+FBC (271) 13
+DONNEE (272) 21
+POINTVIRGULE (273) 2 3
+MAUVAISJETON (274)
+
+
+Nonterminals, with rules where they appear
+
+$accept (20)
+    on left: 0
+instructions (21)
+    on left: 1 2 3, on right: 0 2 3
+instruction (22)
+    on left: 4 5, on right: 2
+mnemonique1 (23)
+    on left: 6 7 8 9 10 11 12 13, on right: 4
+mnemonique2 (24)
+    on left: 14 15 16 17 18 19 20, on right: 5
+valeur (25)
+    on left: 21, on right: 5
+
+
+State 0
+
+    0 $accept: . instructions $end
+
+    $default  reduce using rule 1 (instructions)
+
+    instructions  go to state 1
+
+
+State 1
+
+    0 $accept: instructions . $end
+    2 instructions: instructions . instruction POINTVIRGULE
+    3             | instructions . error POINTVIRGULE
+
+    $end   shift, and go to state 2
+    error  shift, and go to state 3
+    DBT    shift, and go to state 4
+    FIN    shift, and go to state 5
+    ATT    shift, and go to state 6
+    DAL    shift, and go to state 7
+    DET    shift, and go to state 8
+    SGO    shift, and go to state 9
+    SAR    shift, and go to state 10
+    MAR    shift, and go to state 11
+    MAV    shift, and go to state 12
+    MRE    shift, and go to state 13
+    TRD    shift, and go to state 14
+    TRG    shift, and go to state 15
+    DBC    shift, and go to state 16
+    FBC    shift, and go to state 17
+
+    instruction  go to state 18
+    mnemonique1  go to state 19
+    mnemonique2  go to state 20
+
+
+State 2
+
+    0 $accept: instructions $end .
+
+    $default  accept
+
+
+State 3
+
+    3 instructions: instructions error . POINTVIRGULE
+
+    POINTVIRGULE  shift, and go to state 21
+
+
+State 4
+
+    6 mnemonique1: DBT .
+
+    $default  reduce using rule 6 (mnemonique1)
+
+
+State 5
+
+    7 mnemonique1: FIN .
+
+    $default  reduce using rule 7 (mnemonique1)
+
+
+State 6
+
+   14 mnemonique2: ATT .
+
+    $default  reduce using rule 14 (mnemonique2)
+
+
+State 7
+
+   15 mnemonique2: DAL .
+
+    $default  reduce using rule 15 (mnemonique2)
+
+
+State 8
+
+   16 mnemonique2: DET .
+
+    $default  reduce using rule 16 (mnemonique2)
+
+
+State 9
+
+   17 mnemonique2: SGO .
+
+    $default  reduce using rule 17 (mnemonique2)
+
+
+State 10
+
+    8 mnemonique1: SAR .
+
+    $default  reduce using rule 8 (mnemonique1)
+
+
+State 11
+
+    9 mnemonique1: MAR .
+
+    $default  reduce using rule 9 (mnemonique1)
+
+
+State 12
+
+   18 mnemonique2: MAV .
+
+    $default  reduce using rule 18 (mnemonique2)
+
+
+State 13
+
+   19 mnemonique2: MRE .
+
+    $default  reduce using rule 19 (mnemonique2)
+
+
+State 14
+
+   10 mnemonique1: TRD .
+
+    $default  reduce using rule 10 (mnemonique1)
+
+
+State 15
+
+   11 mnemonique1: TRG .
+
+    $default  reduce using rule 11 (mnemonique1)
+
+
+State 16
+
+   12 mnemonique1: DBC .
+   20 mnemonique2: DBC .
+
+    DONNEE    reduce using rule 20 (mnemonique2)
+    $default  reduce using rule 12 (mnemonique1)
+
+
+State 17
+
+   13 mnemonique1: FBC .
+
+    $default  reduce using rule 13 (mnemonique1)
+
+
+State 18
+
+    2 instructions: instructions instruction . POINTVIRGULE
+
+    POINTVIRGULE  shift, and go to state 22
+
+
+State 19
+
+    4 instruction: mnemonique1 .
+
+    $default  reduce using rule 4 (instruction)
+
+
+State 20
+
+    5 instruction: mnemonique2 . valeur
+
+    DONNEE  shift, and go to state 23
+
+    valeur  go to state 24
+
+
+State 21
+
+    3 instructions: instructions error POINTVIRGULE .
+
+    $default  reduce using rule 3 (instructions)
+
+
+State 22
+
+    2 instructions: instructions instruction POINTVIRGULE .
+
+    $default  reduce using rule 2 (instructions)
+
+
+State 23
+
+   21 valeur: DONNEE .
+
+    $default  reduce using rule 21 (valeur)
+
+
+State 24
+
+    5 instruction: mnemonique2 valeur .
+
+    $default  reduce using rule 5 (instruction)
